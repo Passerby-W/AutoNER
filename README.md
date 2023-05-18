@@ -15,6 +15,10 @@ auto model for ner
 
    上面其他格式类似。
 
+## 输出
+
+jsonl文件，其内部格式为：`{"data": "我喜欢吃汉堡和薯条。", "label": [[4, 6, 'food'], [7, 9, 'food']]}`
+
 ## 训练
 
 在config.py文件中更改相关参数。然后运行train.py得到模型model.pth和训练数据的字典vocab.pkl。
